@@ -1,0 +1,841 @@
+/*font awesome*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+/*root*/
+:root{
+	--lato: 'Lato', sans-serif;
+	/* 100 300 */
+	--ubuntu: 'Ubuntu', sans-serif;
+	/* 300 400 500 700 */
+
+	/* For Hover */
+	--hover-color: #504f4f;
+	--hover-bg: #504f4f;
+	--transition: .3s;
+}
+/*body style*/
+body{
+	background: #dfe9c1;
+	height: 100%;
+	width: 100%;
+}
+
+/*main container style*/
+.main-con{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-auto-rows: auto;
+}
+/*header style*/
+.main-con header{
+	height: 120px;
+	width: 100%;
+	background: #7287ae;
+	position: fixed;
+	/*layout*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 129px;
+	z-index: 100000;
+}
+.main-con header img{
+	width: 100%;
+	height: 100%;
+	max-height: 53px;
+	max-width: 305px;
+
+	z-index: 1000000;
+}
+.main-con header .nav a{
+	font-size: 25px;
+	font-family: var(--ubuntu);
+	color: #fff;
+	text-decoration: none;
+	padding-right: 40px;
+	transition: var(--transition);
+}
+.main-con header .nav a:hover{
+	color: var(--hover-color);
+}
+/*remove 4th <a> padding-right*/
+.main-con header .nav a:nth-child(4){
+	padding-right: 0;
+}
+.main-con header i{
+	position: fixed;
+	top: 4%;
+	right: 2%;
+	font-size: 3rem;
+	color: #fff;
+	display: none;
+}
+
+
+
+
+
+/*Home style*/
+.main-con .homeAndMenu{
+	background: url(../images/homeAndMenuBG.jpg)no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	min-height: 1968px;
+	max-height: 1969px;
+}
+.main-con .homeAndMenu .home-text{
+	min-height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main-con .homeAndMenu .home-text h1{
+	color: #fff;
+	font-size: 103px;
+	font-family: var(--ubuntu);
+	text-align: center;
+	word-break: break-word;
+}
+.main-con .homeAndMenu .home-text p{
+	font-size: 33px;
+	font-family: var(--lato);
+	color: #fff;
+	word-break: break-word;
+	text-align: center;
+}
+
+
+/* Home menu style */
+.main-con .homeAndMenu .menu{
+	min-height: 995px;
+	height: 100%;
+	width: 100%;
+	margin-top: 200px;
+	padding: 0 .4rem;
+}
+.main-con .homeAndMenu .menu >h1{
+	text-align: center;
+	margin-bottom: 103px;
+	font-size: 48px;
+	font-family: var(--ubuntu);
+	color: #7287ae;
+	text-transform: uppercase;
+}
+
+.main-con .homeAndMenu .menu .menu-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 62px;
+	flex-wrap: wrap;
+}
+.main-con .homeAndMenu .menu .menu-content div{
+	background: #fff;
+	padding-bottom: 35px;
+}
+.main-con .homeAndMenu .menu .menu-content div h1{
+	color: #504f4f;
+	font-size: 33px;
+	font-family: var(--ubuntu);
+	font-weight: bold;
+	padding-left: 22px;
+	padding-bottom: 25px;
+	padding-top: 16px;
+}
+.main-con .homeAndMenu .menu .menu-content div p{
+	color: #504f4f;
+	font-size: 25px;
+	font-family: var(--lato);
+	font-weight: 700;
+	padding-left: 22px;
+	padding-bottom: 35px;
+}
+.main-con .homeAndMenu .menu .menu-content div h2{
+	color: #565656;
+	font-size: 28px;
+	font-family: var(--ubuntu);
+	font-weight: bold;
+	padding-left: 22px;
+}
+/* menu showMore Style */
+.main-con .homeAndMenu .menu a{
+	padding: 22px 0;
+	text-decoration: none;
+	border-radius: 2rem;
+	background: #7287ae;
+	color: #fff;
+	display: block;
+	max-width: 330px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 93px;
+	font-size: 23px;
+	font-family: var(--ubuntu);
+	transition: var(--transition);
+}
+.main-con .homeAndMenu .menu a:hover{
+	background: var(--hover-bg);
+}
+
+
+
+
+
+
+
+
+
+
+/* Section2 style */
+.main-con .section2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"image1 text1"
+	"text2 image2";
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 3999px;
+	position: relative;
+
+
+	/* extra design */
+	padding-top: .3rem;
+	background: #fff;
+
+}
+.main-con .section2 .image1{
+	grid-area: image1;
+	height: 100%;
+	width: 100%;
+}
+.main-con .section2 .image1Div{
+	grid-area: text1;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.main-con .section2 .image1Div h1{
+	font-size: 58px;
+	font-family: var(--ubuntu);
+	font-weight: 700;
+	color: #333333;
+	margin-left: 57px;
+	margin-bottom: 52px;
+}
+.main-con .section2 .image1Div p{
+	font-family: var(--lato);
+	font-size: 29px;
+	color: #333333;
+	margin-left: 57px;
+	margin-bottom: 52px;
+	max-width: 544px;
+}
+.main-con .section2 .image1Div a{
+	    font-size: 23px;
+    font-family: var(--ubuntu);
+        text-align: center;
+            padding: 22px 0;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: #7287ae;
+    max-width: 330px;
+    color: #fff;
+    margin-left: 57px;
+    transition: var(--transition);
+}
+.main-con .section2 .image1Div a:hover,.main-con .section2 .image2Div a:hover{
+	background: var(--hover-bg);
+}
+.main-con .section2 .image2{
+	grid-area: image2;
+	height: 100%;
+	width: 100%;
+}
+.main-con .section2 .image2Div h1{
+	font-size: 58px;
+	font-family: var(--ubuntu);
+	font-weight: 700;
+	color: #333333;
+	margin-left: 57px;
+	margin-bottom: 52px;
+}
+.main-con .section2 .image2Div p{
+	font-family: var(--lato);
+	font-size: 29px;
+	color: #333333;
+	margin-left: 57px;
+	margin-bottom: 52px;
+	max-width: 544px;
+}
+.main-con .section2 .image2Div a{
+	    font-size: 23px;
+    font-family: var(--ubuntu);
+        text-align: center;
+            padding: 22px 0;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: #7287ae;
+    max-width: 330px;
+    color: #fff;
+    margin-left: 57px;
+     transition: var(--transition);
+}
+.main-con .section2 .image2Div{
+	grid-area: text2;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* dot style */
+.main-con .section2 .dotImgBlue{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+}
+.main-con .section2 .dotImgWhite{
+	position: absolute;
+	top: 100%;
+	left: 84%;
+	transform: translate(-50%,-50%);	
+}
+
+
+
+
+
+
+
+
+/*How to order section style*/
+.main-con .howToOrder-con{
+	height: 100%;
+	width: 100%;
+	background: #7287ae;
+	padding-bottom: 121px;
+}
+.main-con .howToOrder-con >h1{
+	color: #fff;
+	font-size: 48px;
+	font-family: var(--ubuntu);
+	font-weight: bold;
+	margin-top: 92px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+/* Flex */
+.main-con .howToOrder-con .orderCon{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 65px;
+}
+
+/* all orderCon child */
+.main-con .howToOrder-con .orderCon .or1,.main-con .howToOrder-con .orderCon .or2,.main-con .howToOrder-con .orderCon .or3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* for all h2 */
+.main-con .howToOrder-con .orderCon .or1 h2,.main-con .howToOrder-con .orderCon .or2 h2,.main-con .howToOrder-con .orderCon .or3 h2{
+	color: #fff;
+	margin: 45px 0;
+	font-size: 46px;
+	font-family: var(--ubuntu);
+}
+/* for all p */
+.main-con .howToOrder-con .orderCon .or1 p,.main-con .howToOrder-con .orderCon .or2 p,.main-con .howToOrder-con .orderCon .or3 p{
+	color: #fff;
+	font-family: var(--lato);
+	font-size: 19px;
+}
+
+
+.main-con .howToOrder-con .orderCon h1{
+	background: #fff;
+	color: #7287ae;
+	padding: 1.5rem 1.7rem;
+	border-radius: 3rem;
+	text-align: center;
+}
+.main-con .howToOrder-con .orderCon p{
+	max-width: 350px;
+	text-align: center;
+}
+
+
+
+
+
+/* Free Delivery section style */
+.main-con .freeDelivery-con{
+	height: 100%;
+	width: 100%;
+	background: url(../images/freeDeliveryBG.svg)no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.main-con .freeDelivery-con h1{
+	margin-top: 120px;
+	margin-bottom: 43px;
+	color: #7287ae;
+	font-size: 80px;
+	font-family: var(--ubuntu);
+	text-align: center;
+}
+.main-con .freeDelivery-con p{
+	margin-bottom: 87px;
+	font-size: 29px;
+	font-family: var(--lato);
+	color: #7287ae;
+	max-width: 800px;
+	text-align: center;
+	word-break: break-word;
+	font-weight: 500;
+}
+.main-con .freeDelivery-con a{
+	margin-bottom: 133px;
+	text-decoration: none;
+	color: #fff;
+	background: #7287ae;
+	padding: 1.3rem 3.5rem;
+	border-radius: 3rem;
+	font-size: 30px;
+	font-family: var(--ubuntu);
+	transition: var(--transition);
+}
+.main-con .freeDelivery-con a:hover{
+	background: var(--hover-bg);
+}
+.main-con .freeDelivery-con img{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 100%;
+	left: 83%;
+}
+
+
+
+
+
+/* lastSectionWithFooter section style  */
+.main-con .lastSectionWithFooter{
+	height: 1400px;
+	width: 100%;
+	background: url(../images/lastSectionWithFooterBG.jpg)no-repeat center center/cover;
+
+}
+.main-con .lastSectionWithFooter >h1{
+	margin-top: 109px;
+	margin-bottom: 51px;
+	color: #7287ae;
+	font-size: 8rem;
+	font-family: monospace;
+	text-align: center;
+}
+.main-con .lastSectionWithFooter >p{
+	color: #7287ae;
+	font-size: 37px;
+	font-family: var(--lato);
+	text-align: center;
+	max-width: 984px;
+
+	/* middle */
+	margin: 0 auto;
+}
+.main-con .lastSectionWithFooter >h2{
+	color: #7287ae;
+	font-size: 42px;
+	font-family: var(--ubuntu);
+	text-align: center;
+		margin-top: 57px;
+	margin-bottom: 87px;
+}
+.main-con .lastSectionWithFooter span{
+	display: flex;
+	justify-content: center;
+}
+.main-con .lastSectionWithFooter span img{
+	margin-right: 1rem;
+	cursor: pointer;
+}
+/* remove 3th img margin right */
+.main-con .lastSectionWithFooter span img:nth-child(3){
+	margin-right: 0;
+}
+
+
+
+
+/*Footer*/
+.main-con .lastSectionWithFooter .footer{
+	width: 100%;
+	background: #7187ad;
+	padding-bottom: 2rem;
+}
+
+.main-con .lastSectionWithFooter .footer h2{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin-top: 374px;
+}
+.main-con .lastSectionWithFooter .footer h2 a{
+	color: #fff;
+}
+
+
+
+.main-con .lastSectionWithFooter .footer .footerTextCon{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+		margin-top: 4rem;
+
+		/* indention */
+		padding: 0 .5rem;
+}
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo1,.foo2,.foo3,.foo4{
+	display: flex;
+	flex-direction: column;
+}
+
+/* foo1 h1,p style */
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo1 h1{
+	color: #fff;
+	font-size: 25px;
+	font-family: var(--ubuntu);
+	margin-bottom: 48px;
+}
+
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo1 p{
+	color: #fff;
+	font-size: 25px;
+	font-family: var(--lato);
+}
+
+
+/* foo1 foo2 foo3 foo4 h1 style */
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo2 h1,
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo3 h1,
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo4 h1{
+	color: #fff;
+	font-size: 21px;
+	font-family: var(--ubuntu);
+}
+/* foo1 foo2 foo3 foo4 a style */
+
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo2 a,
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo3 a,
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo4 a{
+	color: #fff;
+	text-decoration: none;
+	margin-top: 1rem;
+}
+
+
+.main-con .lastSectionWithFooter .footer .footerTextCon .foo1 p{
+	max-width: 544px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media */
+
+
+/* Decrease padding for nav */
+@media screen and (max-width: 1162px){
+	.main-con header{
+		padding: 0 20px;
+	}
+}
+
+
+/* media for home menu flex-wrap */
+@media screen and (max-width: 1153px){
+		.main-con .homeAndMenu{
+		background: url(../images/homeAndMenuBG.jpg)no-repeat center center/cover;
+		height: 100%;
+		width: 100%;
+		min-height: 2500px;
+	}
+	/* Change color */
+	.main-con .homeAndMenu .menu >h1{
+		color: #fff;
+	}
+}
+@media screen and (max-width: 752px){
+		.main-con .homeAndMenu{
+		background: url(../images/homeAndMenuBG.jpg)no-repeat center center/cover;
+		height: 100%;
+		width: 100%;
+		min-height: 3200px;
+	}
+}
+
+
+
+/* media for nav(small width device) */
+@media screen and (max-width: 860px){
+
+	/* make nav list vertical */
+	.main-con header{
+		width: 100%;
+		/*layout*/
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		transition: var(--transition);
+	}
+	/*nav list new style*/
+	.main-con header .nav{
+		transition: var(--transition);
+		position: fixed;
+		background: #7287ae;
+		width: 100%;
+		height: 100vh;
+		top: -100%;
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	.main-con header .nav a{
+		padding-bottom: 30px;
+		/*reset*/
+		margin: 0;
+		padding: 0;
+		/*new*/
+		padding-bottom: .9rem;
+	}
+
+	/* decrease image size */
+	.main-con header img{
+		width: 100%;
+		height: 100%;
+		max-height: 53px;
+		max-width: 200px;
+	}
+	/*Show nav*/
+	.main-con header i{
+		display: block;
+	}
+
+
+
+
+
+	/* Media for Home */
+	.main-con .homeAndMenu .home-text{
+		min-height: 700px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.main-con .homeAndMenu .home-text h1{
+		color: #fff;
+		font-size: 63px;
+		font-family: var(--ubuntu);
+		text-align: center;
+		word-break: break-word;
+		margin-bottom: 1rem;
+	}
+	.main-con .homeAndMenu .home-text p{
+		font-size: 23px;
+		font-family: var(--lato);
+		color: #fff;
+		word-break: break-word;
+		text-align: center;
+
+	}
+
+
+
+
+}
+
+
+
+
+
+/* Media for section 2 */
+@media screen and (max-width: 1090px){
+		/* Media for section 2 */
+		.main-con .section2{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 
+		"text1" 
+		"text2";
+		width: 100%;
+		height: 100%;
+		max-width: 1400px;
+	}
+
+		/* display none */
+		.main-con .section2 .image1{
+		display: none;
+	}
+	.main-con .section2 .image2{
+		display: none;
+	}
+
+	/* insert background */
+	.main-con .section2 .image1Div{
+		background: url("../images/section2-img1.svg")no-repeat center center/cover;
+		height: 100%;
+		width: 100%;
+		padding: 2rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-con .section2 .image2Div{
+		background: url("../images/section2-img2.svg")no-repeat center center/cover;
+		height: 100%;
+		width: 100%;
+		padding: 2rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+	}
+
+
+	/* max-width for h1 */
+	.main-con .section2 .image1Div >h1,.main-con .section2 .image2Div >h1{
+		max-width: 500px;
+	}
+
+	/* put background to hightlight the h1 & p */
+	.main-con .section2 .image1Div >h1,.main-con .section2 .image1Div >p{
+		background: #7287ae;
+		padding: .5rem;
+		border-radius: 2rem;
+		color: #fff;
+		font-size: 2rem;
+
+		/*reset left margin*/
+		margin-left: 0;
+	}
+	.main-con .section2 .image2Div >h1,.main-con .section2 .image2Div >p{
+		background: #7287ae;
+		padding: .5rem;
+		border-radius: 2rem;
+		color: #fff;
+		font-size: 2rem;
+
+		/*reset left margin*/
+		margin-left: 0;
+	}
+
+
+	/* resize 2 p */
+	.main-con .section2 .image1Div p,.main-con .section2 .image2Div p{
+		font-size: 1.1rem;
+	}
+
+
+	/* For image1Div & image1Div <a> style */
+	.main-con .section2 .image1Div a,.main-con .section2 .image2Div a{
+		padding: 1rem;
+
+		/*reset left margin*/
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+	/* media for dot reduce width */
+		.main-con .section2 .dotImgBlue{
+		width: 70px;	
+	}
+		.main-con .section2 .dotImgWhite{
+		width: 70px;	
+	}
+
+
+	/* media reduce dot width freeDelivery section */
+		.main-con .freeDelivery-con img{
+		width: 70px;
+	}
+}
+
+
+
+
+
+/* media for lastSection first section */
+@media screen and (max-width: 460px){
+		.main-con .lastSectionWithFooter >h1{
+		margin-top: 20px;
+		margin-bottom: 5px;
+		color: #7287ae;
+		font-size: 8rem;
+		font-family: monospace;
+		text-align: center;
+	}
+	.main-con .lastSectionWithFooter >p{
+		color: #7287ae;
+		font-size: 37px;
+		font-family: var(--lato);
+		text-align: center;
+		max-width: 984px;
+
+		/* middle */
+		margin: 0 auto;
+	}
+	.main-con .lastSectionWithFooter >h2{
+		color: #7287ae;
+		font-size: 30px;
+		font-family: var(--ubuntu);
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
