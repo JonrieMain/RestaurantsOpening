@@ -36,7 +36,7 @@ body{
 .main-con header{
 	height: 120px;
 	width: 100%;
-	background: #7287ae;
+	background: #6687b0;
 	position: fixed;
 	/*layout*/
 	display: flex;
@@ -494,7 +494,7 @@ body{
 /*Footer*/
 .main-con .lastSectionWithFooter .footer{
 	width: 100%;
-	background: #7187ad;
+	background: #6687b0;
 	padding-bottom: 2rem;
 }
 
